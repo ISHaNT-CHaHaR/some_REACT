@@ -1,0 +1,7 @@
+.App {
+   height: 100vh;
+   background: rgb(81, 146, 168);
+}
+.tweet {
+   border: 2px solid black;
+}
