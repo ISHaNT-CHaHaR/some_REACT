@@ -1,7 +1,29 @@
 .App {
-   height: 100vh;
-   background: rgb(81, 146, 168);
+   min-height: 100vh;
+   background: #373b44; /* fallback for old browsers */
+   background: -webkit-linear-gradient(
+      to right,
+      #4286f4,
+      #373b44
+   ); /* Chrome 10-25, Safari 5.1-6 */
+   background: linear-gradient(
+      to left,
+      #4286f4,
+      #373b44
+   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
 }
 .tweet {
    border: 2px solid black;
+   height: 300px;
+   width: 300px;
+   background: white;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   border-radius: 20px;
 }

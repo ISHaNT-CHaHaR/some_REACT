@@ -8,8 +8,10 @@ function App() {
 
    return (
       <div className="App">
-         <h1>Hello World!</h1>
-         <Tweet />
+         <Tweet name="ISHANT" message="Nevermind!" />
+         <Tweet name="SENKU" message="I m 1 Billion % sure!" />
+         <Tweet name="MUICHIRO" message="what was that cloud shape again?" />
+         <Tweet name="KANROJI" message="Kawai!" />
       </div>
    );
 }
