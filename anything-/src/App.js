@@ -1,17 +1,35 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Tweet from './tweet';
 
 function App() {
    /// this app.js is a component.
    // this is not actually HTML .. it is JSX.
+   // const [isRed, setRed] = useState(false);
+   // const [count, setCount] = useState(0);
+
+   // const increment = () => {
+   //    setCount(count + 1);
+   //    setRed(true);
+   // };
+
+   // const decrement = () => {
+   //    if (count > 0) {
+   //       setCount(count - 1);
+   //       setRed(!isRed);
+   //    }
+   // };
+
+   const [users, setUsers] = useState([
+      { name: 'ISHANT', message: 'Hello There!' },
+      { name: 'Zenitsu!', message: 'Nezuko channnnnnn! nezuko nezuko!' },
+   ]);
 
    return (
       <div className="App">
-         <Tweet name="ISHANT" message="Nevermind!" />
-         <Tweet name="SENKU" message="I m 1 Billion % sure!" />
-         <Tweet name="MUICHIRO" message="what was that cloud shape again?" />
-         <Tweet name="KANROJI" message="Kawai!" />
+         {users.map((user) => {
+            return <Tweet name={user.name} message={user.message} />;
+         })}
       </div>
    );
 }

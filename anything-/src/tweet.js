@@ -6,7 +6,7 @@ function Tweet({ name, message }) {
       <div className="tweet">
          <h3>{name}</h3>
          <p>{message}</p>
-         <h3>Number</h3>
+         <h3>8</h3>
       </div>
    );
 }

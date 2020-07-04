@@ -27,3 +27,7 @@
    align-items: center;
    border-radius: 20px;
 }
+.red {
+   color: rgb(230, 92, 92);
+   font-size: 40px;
+}
